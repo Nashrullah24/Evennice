@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend";
+  background-color: #6e95b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Styling */
+.container {
+  display: flex;
+  width: 750px;
+  height: 400px;
+  background-color: #B9E5E8;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+}
+
+/* Form Styling */
+.form-container {
+  width: 70%;
+  background-color: #3a578b;
+  padding: 35px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-container label {
+  font-family: "Lexend";
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.form-container input {
+  font-family: "Lexend";
+  margin-bottom: 8px;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d6e0f5;
+  color: #3a578b;
+}
+
+.form-container input::placeholder {
+  color: #6a7fa3;
+}
+
+.form-container button {
+  font-family: "Lexend";
+  padding: 7px 30px 7px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #B9E5E8;
+  color: #3a578b;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-container button:hover {
+  background-color: #d6e0f5;
+}
+
+.form-container .button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Illustration Styling */
+.illustration {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustration img {
+  width: 40%;
+  height: auto;
+}

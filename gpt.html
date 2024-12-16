@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Layout</title>
+    <link rel="stylesheet" href="Styesheet/gpt.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Event Cards</h1>
+    </header>
+
+    <main class="card-container">
+      <!-- Card 1 -->
+      <div class="card" onclick="navigateToPage('event1.html')">
+        <img src="placeholder1.jpg" alt="Event 1" class="card-image" />
+        <div class="card-content">
+          <h3>Event 1: Culinary Adventure</h3>
+          <p>Tomorrow at 19:00 GMT+7</p>
+          <p>From $20.00 | Hosted by Culinary Masters</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card" onclick="navigateToPage('event2.html')">
+        <img src="placeholder2.jpg" alt="Event 2" class="card-image" />
+        <div class="card-content">
+          <h3>Event 2: Online Dental Workshop</h3>
+          <p>Today at 21:00 GMT+7</p>
+          <p>From $50.00 | Hosted by Dental Pro</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card" onclick="navigateToPage('event3.html')">
+        <img src="placeholder3.jpg" alt="Event 3" class="card-image" />
+        <div class="card-content">
+          <h3>Event 3: Art Museum Livestream</h3>
+          <p>Tomorrow at 18:00 GMT+7</p>
+          <p>Free Event | Hosted by Art Society</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="Script/gpt2.js"></script>
+  </body>
+</html>

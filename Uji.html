@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Cards</title>
+    <link rel="stylesheet" href="Styesheet/Uji.css" />
+  </head>
+  <body>
+    <section class="container">
+      <!-- Section 1 -->
+      <h2>Sains & Technology Event</h2>
+      <div class="card-wrapper">
+        <a href="page1.html" class="card">
+          <img src="uploaded_image.png" alt="Event Image" />
+          <div class="card-content">
+            <h3>GDGDC ITS</h3>
+            <p>Saturday 07:00</p>
+            <p>Teater Lantai 4, UIN</p>
+          </div>
+        </a>
+        <a href="page2.html" class="card">
+          <img src="uploaded_image.png" alt="Event Image" />
+          <div class="card-content">
+            <h3>GDGDC ITS</h3>
+            <p>Saturday 07:00</p>
+            <p>Teater Lantai 4, UIN</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Section 2 -->
+      <h2>Training in UIN Syarif Hidayatullah</h2>
+      <div class="card-wrapper">
+        <a href="page3.html" class="card">
+          <img src="uploaded_image.png" alt="Event Image" />
+          <div class="card-content">
+            <h3>GDGDC ITS</h3>
+            <p>Saturday 07:00</p>
+            <p>Teater Lantai 4, UIN</p>
+          </div>
+        </a>
+        <a href="page4.html" class="card">
+          <img src="uploaded_image.png" alt="Event Image" />
+          <div class="card-content">
+            <h3>GDGDC ITS</h3>
+            <p>Saturday 07:00</p>
+            <p>Teater Lantai 4, UIN</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Section 3 -->
+      <h2>Business Event</h2>
+      <div class="card-wrapper">
+        <a href="page5.html" class="card">
+          <img src="uploaded_image.png" alt="Event Image" />
+          <div class="card-content">
+            <h3>GDGDC ITS</h3>
+            <p>Saturday 07:00</p>
+            <p>Teater Lantai 4, UIN</p>
+          </div>
+        </a>
+        <a href="page6.html" class="card">
+          <img src="uploaded_image.png" alt="Event Image" />
+          <div class="card-content">
+            <h3>GDGDC ITS</h3>
+            <p>Saturday 07:00</p>
+            <p>Teater Lantai 4, UIN</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-links">
+        <a href="#">About</a>
+        <a href="#">Find Event</a>
+        <a href="#">Create Event</a>
+        <a href="#">Our Team</a>
+        <a href="#">Today Event</a>
+        <a href="#">Training</a>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const uploadedImage = localStorage.getItem("uploadedImage");
+        if (uploadedImage) {
+          const images = document.querySelectorAll(".card img");
+          images.forEach((img) => {
+            img.src = uploadedImage;
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

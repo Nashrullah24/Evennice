@@ -1,0 +1,21 @@
+.kotak-parent{
+    display: flex;
+}
+
+.kotak{
+    /* padding: 40px 30px; */
+    background-color: aqua;
+    justify-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.kotak2{
+    background-color: rgb(0, 255, 128);
+    justify-items: center;
+    width: 200px;
+    height: 100px;
+    border-radius: 15px;
+    margin-left: -20px;
+}
