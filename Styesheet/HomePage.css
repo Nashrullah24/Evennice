@@ -4,10 +4,16 @@
   --primary: #162a4a;
   --background: #dff2eb;
   --background2: #cfe5f9;
+  --font: "Lexend";
 }
 .body {
   background-color: #dff2eb;
   margin: 0px;
+  font-family: var(--font);
+}
+
+h2 {
+  color: var(--primary);
 }
 .navigator {
   display: flex;
@@ -259,4 +265,69 @@
 
 .hidden {
   display: none;
+}
+
+/* Card Container */
+.container-hotevens {
+  padding: 20px;
+}
+
+.card-wrapper-hot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: start;
+  margin-bottom: 50px;
+}
+
+.card-hot {
+  text-decoration: none;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.card-hot:hover {
+  transform: translateY(-10px);
+}
+
+.card-hot img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.card-content-hot {
+  padding: 10px;
+  color: #000;
+  text-align: center;
+  font-family: var(--font);
+}
+
+.card-content-hot h3 {
+  font-size: 1.2em;
+}
+
+.card-content-hot p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background-color: #0b2e4a;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 0.9em;
 }
