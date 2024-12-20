@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+:root {
+  --primary: #162a4a;
+  --background: #dff2eb;
+  --background2: #cfe5f9;
+  --font: "Lexend";
+  --green: #3ea729;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+body {
+  background-color: var(--background2);
+  color: var(--primary);
+  font-family: "lexend";
+}
+
+/* Form Section */
+
+.form-section {
+  background-color: var(--background2);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 30px;
+  max-width: 650px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #dff2eb;
+}
+
+.form-container h2 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  color: var(--primary);
+  font-family: var(--font);
+}
+
+.form-subtitle {
+  margin: 10px 0 20px;
+  font-weight: bold;
+  color: #555;
+  font-family: "Lexend";
+}
+
+.highlight {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="date"] {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.radio-section,
+.price-section,
+.terms-section {
+  text-align: left;
+  margin: 15px 0;
+}
+
+.radio-section input {
+  margin: 0 5px 0 15px;
+}
+
+.price-section label {
+  font-weight: bold;
+}
+
+.terms-section {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.terms-section input {
+  margin-right: 8px;
+  margin-top: 3px;
+}
+
+.submit-btn {
+  background-color: var(--green);
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2bcf5c;
+}
+
+/* Testimonials */
+.testimonials {
+  text-align: center;
+  margin: 40px 0;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.testimonials h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.testimonial {
+  max-width: 300px;
+  text-align: left;
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #333;
+  font-size: 0.95em;
+}
+
+.testimonial .logo {
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--primary);
+  font-size: 0.9em;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+footer nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 0.9em;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
