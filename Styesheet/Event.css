@@ -109,7 +109,7 @@ h2 {
 }
 
 .header {
-  background: #ffa500;
+  background: #162a4a;
   color: white;
   text-align: center;
   padding: 20px 10px;
@@ -129,7 +129,7 @@ h2 {
 }
 
 .event-details h2, .organizer h3, .schedule h3, .about-event h3, .participation h3, .related-events h3 {
-  border-bottom: 2px solid #ffa500;
+  border-bottom: 2px solid #162a4a;
   padding-bottom: 10px;
 }
 
