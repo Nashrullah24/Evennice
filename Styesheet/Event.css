@@ -22,7 +22,7 @@ h2 {
   align-items: center;
   background-color: white;
   padding: 0.5em 1em;
-  font-size: 16px;
+  font-size: 20px;
   border-radius: 0px 0px 10px 10px;
 }
 
@@ -117,15 +117,39 @@ h2 {
 
 .header h1 {
   margin: 0;
-  font-size: 2.5em;
+  font-size: clamp(1rem, 1.5vw, 5rem); /* Responsif untuk teks konten */
+  line-height: 1.5; /* Tinggi baris untuk keterbacaan */
+}
+
+.banner {
+  background: url('banner-bg.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 2rem; /* Menggunakan rem agar responsif */
+  position: relative;
+  max-width: 90vw; /* Tidak melebihi 90% dari lebar layar */
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.banner-poster {
+  margin-top: 1.5rem;
+  width: 800px; /* Poster mengikuti lebar kontainer */
+  max-width: 50vw; /* Tidak lebih besar dari 80% lebar layar */
+  height: 500px; /* Proporsi gambar tetap terjaga */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .event-details, .organizer, .schedule, .about-event, .participation, .related-events {
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  background: #f4f4f4;
-  border-radius: 8px;
+  max-width: 80vw; /* Responsif, 80% dari lebar layar */
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: clamp(1rem, 1.5vw, 3rem); /* Responsif untuk teks konten */
+    line-height: 1.5; /* Tinggi baris untuk keterbacaan */
 }
 
 .event-details h2, .organizer h3, .schedule h3, .about-event h3, .participation h3, .related-events h3 {
