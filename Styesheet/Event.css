@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+:root {
+  --primary: #162a4a;
+  --background: #dff2eb;
+  --background2: #cfe5f9;
+  --font: "Lexend";
+}
+
+.body {
+  background-color: #dff2eb;
+  margin: 0px;
+  font-family: var(--font);
+}
+
+h2 {
+  color: var(--primary);
+}
+.navigator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0.5em 1em;
+  font-size: 20px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.navigator .Logo {
+  position: relative;
+}
+
+.search-container {
+  text-align: center;
+  width: 300px;
+}
+
+#search-input {
+  width: 100%;
+  height: 5%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #c9dce8;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #e9f0f5;
+  color: #162a4a;
+  font-family: "lexend";
+}
+
+.link-and-button {
+  display: flex;
+}
+
+#nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-block-start: 20px;
+  padding-inline-start: 10px;
+}
+
+#nav-links li {
+  display: inline-block;
+  padding-left: 25px;
+}
+
+#nav-button {
+  width: 83.44px;
+  height: 35px;
+  padding: 6px 16px 8px 16px;
+  border: 2px solid #ffffff;
+  background-color: #162a4a;
+  border-radius: 7px;
+  font-family: "Lexend";
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Lexend";
+}
+
+#word-link {
+  font-family: "Lexend";
+  font-size: 16px;
+  color: #162a4a;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.go-button {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero-section {
+  background-color: #e6f7ff;
+  padding: 20px;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.scroll-content {
+  display: flex;
+}
+
+.header {
+  background: #162a4a;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: clamp(1rem, 1.5vw, 5rem); /* Responsif untuk teks konten */
+  line-height: 1.5; /* Tinggi baris untuk keterbacaan */
+}
+
+.banner {
+  background: url('banner-bg.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 2rem; /* Menggunakan rem agar responsif */
+  position: relative;
+  max-width: 90vw; /* Tidak melebihi 90% dari lebar layar */
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.banner-poster {
+  margin-top: 1.5rem;
+  width: 800px; /* Poster mengikuti lebar kontainer */
+  max-width: 50vw; /* Tidak lebih besar dari 80% lebar layar */
+  height: 500px; /* Proporsi gambar tetap terjaga */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.event-details, .organizer, .schedule, .about-event, .participation, .related-events {
+  max-width: 80vw; /* Responsif, 80% dari lebar layar */
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: clamp(1rem, 1.5vw, 3rem); /* Responsif untuk teks konten */
+    line-height: 1.5; /* Tinggi baris untuk keterbacaan */
+}
+
+.event-details h2, .organizer h3, .schedule h3, .about-event h3, .participation h3, .related-events h3 {
+  border-bottom: 2px solid #162a4a;
+  padding-bottom: 10px;
+}
+
+.organizer-details img {
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.organizer-details p {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: calc(100% - 120px);
+}
+
+.related-event-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.related-event-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.related-event-item h4 {
+  margin: 0;
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background: #ffa500;
+  color: white;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #0b2e4a;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 0.9em;
+}
