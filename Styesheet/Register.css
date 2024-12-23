@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 /* General Reset */
 * {
   margin: 0;
@@ -21,11 +21,10 @@ body {
   display: flex;
   width: 750px;
   height: 400px;
-  background-color: #B9E5E8;
+  background-color: #b9e5e8;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-
 }
 
 /* Form Styling */
@@ -78,7 +77,7 @@ body {
   font-size: 16px;
   border: none;
   border-radius: 5px;
-  background-color: #B9E5E8;
+  background-color: #b9e5e8;
   color: #3a578b;
   cursor: pointer;
   font-weight: bold;
@@ -88,10 +87,20 @@ body {
   background-color: #d6e0f5;
 }
 
-.form-container .button-container{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+.form-container .button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.form-container i {
+  color: yellow;
+  font-family: "Lexend";
+}
+
+.form-container a {
+  color: #dfe3ec;
+  font-family: "Lexend";
 }
 
 /* Illustration Styling */

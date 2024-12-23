@@ -1,167 +1,167 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 /* Add this CSS to your project */
 body {
-    font-family: Arial, sans-serif;
-    background-color:#6e95b9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #6e95b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-.head-wrap{
-    display: flex;
+.head-wrap {
+  display: flex;
 }
 
 .wrapper {
-    display: flex;
-    width: 750px;
-    height: 400px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
+  display: flex;
+  width: 750px;
+  height: 400px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.wrapper2{ 
-   width: 300px;
-   height: 400px;
-   background-color:#B9E5E8;
-   border-radius: 10px 0px 0px 10px;
-   margin-right: -20px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+.wrapper2 {
+  width: 300px;
+  height: 400px;
+  background-color: #b9e5e8;
+  border-radius: 10px 0px 0px 10px;
+  margin-right: -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.wrapper2 #wrapper_logo-headline{
-    margin-left: 35px;
-    width: 210px;
+.wrapper2 #wrapper_logo-headline {
+  margin-left: 35px;
+  width: 210px;
 }
 
-.wrapper2 #wrapper_logo-headline p{
-    font-family: "Lexend";
-    font-size: 10px;
-    margin-left: 25px;
-    
+.wrapper2 #wrapper_logo-headline p {
+  font-family: "Lexend";
+  font-size: 10px;
+  margin-left: 25px;
 }
-
-
 
 .wrapper .image-section {
-    background-color: #c8ebf0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    padding: 20px;
+  background-color: #c8ebf0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 20px;
 }
 
 .wrapper .image-section img {
-    width: 70%;
+  width: 70%;
+}
+
+.wrapper i {
+  color: red;
 }
 
 form {
-    flex: 1;
-    background-color: #DFF2EB;
-    padding: 40px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 15px;
+  flex: 1;
+  background-color: #dff2eb;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
 }
 
-.judul{
-    justify-content: center;
+.judul {
+  justify-content: center;
 }
 
 h1 {
-    font-size: 24px;
-    color: #4a647d;
-    margin-bottom: 10px;
-    text-align: center;
-    font-family: "Lexend";
+  font-size: 24px;
+  color: #4a647d;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Lexend";
 }
 
 .input-box {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .input-box p {
-    margin: 0;
-    font-size: 14px;
-    color: #4a647d;
-    font-family: "Lexend";
+  margin: 0;
+  font-size: 14px;
+  color: #4a647d;
+  font-family: "Lexend";
 }
 
 .input-box input {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    margin-top: 5px;
-    border: 1px solid #d0e4eb;
-    border-radius: 5px;
-    background-color: #ffffff;
-    box-sizing: border-box;
-    font-family: "Lexend";
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 5px;
+  border: 1px solid #d0e4eb;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  font-family: "Lexend";
 }
 
 button.btn {
-    background-color: #43678c;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    padding: 2px 30px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
-    font-family: "Lexend";
+  background-color: #43678c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 2px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: "Lexend";
 }
 
 button.btn:hover {
-    background-color: #36556f;
+  background-color: #36556f;
 }
 
 .forgot-password,
 .register-link {
-    text-align: left;
-    margin-top: 16px;
-    margin-bottom: -10px;
+  text-align: left;
+  margin-top: 16px;
+  margin-bottom: -10px;
 }
 
 .forgot-password a,
 .register-link a {
-    font-family: "Lexend";
-    color: #162A4A;
-    text-decoration: none;
-    font-size: 14px;
+  font-family: "Lexend";
+  color: #162a4a;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .forgot-password a:hover,
 .register-link a:hover {
-    font-family: "Lexend";
-    text-decoration: underline;
+  font-family: "Lexend";
+  text-decoration: underline;
 }
 
 .register-link p {
-    font-family: "Lexend";
-    font-size: 14px;
-    color: #43678c;
-    margin: 0;
+  font-family: "Lexend";
+  font-size: 14px;
+  color: #43678c;
+  margin: 0;
 }
 
 .register-link a {
-    font-family: "Lexend";
-    font-size: 14px;
-    color: #162A4A;
-    margin: 0;
+  font-family: "Lexend";
+  font-size: 14px;
+  color: #162a4a;
+  margin: 0;
 }
 
-.under-input{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.under-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

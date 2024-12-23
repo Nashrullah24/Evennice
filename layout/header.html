@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="styesheet/HomePage.css" />
+
+<header>
+  <nav class="navigator">
+    <div class="Logo">
+      <a href="Logo"><img src="Picture/Logo.png" alt="Logo" width="150px" /></a>
+    </div>
+    <div class="search-container">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search Event..."
+        oninput="filterItems()"
+      />
+      <!-- <ul id="search-results">
+              </ul> -->
+    </div>
+    <div class="link-and-button">
+      <ul id="nav-links">
+        <li><a id="word-link" href="">Find Event</a></li>
+        <li><a id="word-link" href="CreateEvent.php">Create Event</a></li>
+      </ul>
+      <div class="go-button">
+        <button id="nav-button" onclick="location.href='Login.php'">
+          Login
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
