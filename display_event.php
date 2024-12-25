@@ -26,9 +26,9 @@ if (mysqli_num_rows($result) > 0) {
         echo '<div class="card">';
         echo '<a href="event_detail.php?id=' . $event_id . '">';
         if (!empty($poster)) {
-            echo '<img src="Picture/' . $poster . '" alt="' . $event_name . '" width="255px">'; // Gunakan nama event di alt text
+            echo '<img src="uploads/' . $poster . '" alt="' . $event_name . '" width="255px">'; // Gunakan nama event di alt text
         } else {
-            echo '<img src="picture/placeholder.png" alt="No Poster Available" width="255px">';
+            echo '<img src="uploads/placeholder.png" alt="No Poster Available" width="255px">';
         }
         echo '</a>';
         echo '</div>';

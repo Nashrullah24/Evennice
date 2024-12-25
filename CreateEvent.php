@@ -5,11 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evenice Event Form</title>
-    <link rel="stylesheet" href="Styesheet/CreateEvent.css" />
+    <link rel="stylesheet" href="styesheet/CreateEvent.css" />
   </head>
   <body>
     <!-- Header -->
     <header></header>
+
+    <a href="index.php" style="position: sticky;"><img src="picture/Logo.png" width= 150px;></a>
 
     <!-- Form Section -->
     <section class="form-section">
@@ -21,7 +23,8 @@
         <p class="form-subtitle">Fill Form Below:</p>
         <form action="process_event.php" method="POST" enctype="multipart/form-data">
           <input type="text" placeholder="Name Of Event" name="eventname" />
-          <input type="text" placeholder="Event Purpose" name="purpose" />
+          <!-- <input type="text" placeholder="Event Purpose" name="purpose" /> -->
+          <textarea name="description" id="description" placeholder="Description" rows="4" cols="70"></textarea>
           <input
             type="date"
             placeholder="Event schedule (DD/MM/YYYY)"
@@ -55,10 +58,12 @@
           <input type="text" placeholder="Duration" name="duration" />
           <input
             type="text"
-            placeholder="Event venue (Place/Link Of Online Meeting)"
+            placeholder="Event venue"
             name="place"
             required
           />
+
+          <input type="text" placeholder="Registration Link" name="link" required>
 
           <div class="file-upload">
             <label for="ktp">Upload KTP</label>

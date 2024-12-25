@@ -5,7 +5,7 @@ include 'database/EvenBase.php';
 // Periksa apakah form telah dikirim
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Ambil data dari form
-    $purpose = $_POST['purpose'] ?? '';
+    $description = $_POST['description'] ?? '';
     $name = $_POST['eventname'] ?? '';
     $organizer = $_POST['organizer'] ?? '';
     $event_type = $_POST['event_type'] ?? '';
@@ -13,6 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $price = $_POST['price'] ?? '0';
     $duration = $_POST['duration'] ?? '';
     $place = $_POST['place'] ?? '';
+    $link = $_POST['link'] ?? '';
 
     // Proses upload file KTP
     $ktp = $_FILES['ktp']['name'] ?? '';
@@ -23,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $poster_tmp = $_FILES['poster']['tmp_name'];
 
     // Validasi input (opsional)
-    if (empty($name) || empty($purpose) || empty($organizer) || empty($event_type) || empty($place) || empty($ktp) || empty($poster)) {
+    if (empty($name) || empty($description) || empty($organizer) || empty($event_type) || empty($place) || empty($ktp) || empty($poster)) {
         die("Semua kolom yang wajib diisi harus diisi.");
     }
 
@@ -33,18 +34,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         mkdir($upload_dir, 0777, true);
     }
 
-    move_uploaded_file($ktp_tmp, $upload_dir . $ktp);
+    // move_uploaded_file($ktp_tmp, $upload_dir . $ktp);
     move_uploaded_file($poster_tmp, $upload_dir . $poster);
 
     // Siapkan query SQL untuk menyimpan data
-    $sql = "INSERT INTO event (purpose, name, organizer, event_type, quota, price, duration, place, ktp, poster)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO event (description, name, organizer, event_type, quota, price, duration, place, ktp, poster, link)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     // Jalankan query menggunakan prepared statement
     if ($stmt = $db->prepare($sql)) {
         $stmt->bind_param(
-            'ssssisisss',
-            $purpose,
+            'sssssisssss',
+            $description,
             $name,
             $organizer,
             $event_type,
@@ -53,11 +54,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $duration,
             $place,
             $ktp,
-            $poster
+            $poster,
+            $link
         );
 
         if ($stmt->execute()) {
-            echo "Data berhasil disimpan!";
+            echo "<script>
+                    alert('Data berhasil disimpan!');
+                    window.location.href = 'index.php';
+                  </script>";
         } else {
             echo "Terjadi kesalahan: " . $stmt->error;
         }

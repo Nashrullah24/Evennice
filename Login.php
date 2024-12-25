@@ -52,7 +52,7 @@
           <div class="under-input">
             <button class="btn" type="submit" name="login">Login</button>
             <div class="forgot-password">
-              <a href="index.php">Back to Home</a>
+              <!-- <a href="index.php">Back to Home</a> -->
             </div>
 
             <div class="register-link">

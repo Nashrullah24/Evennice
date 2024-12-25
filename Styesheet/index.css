@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+:root {
+  --primary: #162a4a;
+  --background: #dff2eb;
+  --background2: #cfe5f9;
+  --font: "Lexend";
+}
+
+body {
+  font-family: var(--font); /* Font default yang umum */
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Tengah horizontal */
+  align-items: center; /* Tengah vertikal */
+  min-height: 100vh; /* Memastikan body memenuhi tinggi layar */
+  background-color: var(--background2); /* Warna latar belakang luar */
+}
+
+.container {
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center; /* Teks rata tengah */
+  max-width: 500px; /* Lebar maksimum container agar responsif */
+  width: 90%; /* Lebar container 90% dari parent, responsif */
+}
+
+.content h1 {
+  color: #333; /* Warna judul */
+  margin-bottom: 10px;
+}
+
+.content p {
+  color: #555; /* Warna paragraf */
+  margin-bottom: 20px;
+}
+
+.login-button {
+  background-color: #82e0aa; /* Warna tombol login */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Transisi untuk hover */
+}
+
+.login-button:hover {
+  background-color: #70c198; /* Warna tombol saat dihover */
+}
+
+/* Responsif untuk layar yang lebih kecil */
+@media (max-width: 400px) {
+  .container {
+    padding: 20px;
+  }
+
+  .content h1 {
+    font-size: 1.5em; /* Ukuran font lebih kecil */
+  }
+  .content p {
+    font-size: 0.9em;
+  }
+  .login-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

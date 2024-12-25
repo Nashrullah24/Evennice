@@ -21,6 +21,11 @@ body {
   font-family: "lexend";
 }
 
+/* home button  */
+.home-button {
+  position: sticky;
+}
+
 /* Form Section */
 
 .form-section {
@@ -60,14 +65,15 @@ body {
 
 .form-container input[type="text"],
 .form-container input[type="number"],
-.form-container input[type="date"] {
+.form-container input[type="date"],
+.form-container textarea {
   width: 100%;
   padding: 12px 10px;
   margin: 10px 0;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
-  color: #333;
+  color: var(--primary);
 }
 
 .radio-section,

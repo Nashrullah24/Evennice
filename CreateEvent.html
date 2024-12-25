@@ -18,15 +18,32 @@
           US?
         </h2>
         <p class="form-subtitle">Fill Form Below:</p>
-        <form action="#" method="POST">
-          <input type="text" placeholder="Name Of Event" required />
-          <input type="text" placeholder="Event Purpose" required />
+        <form
+          action="process_event.php"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <input type="text" placeholder="Name Of Event" name="eventname" />
+          <!-- <input type="text" placeholder="Event Purpose" name="purpose" /> -->
+          <textarea
+            name="description"
+            id="description"
+            placeholder="Description"
+            rows="4"
+            cols="70"
+          ></textarea>
           <input
             type="date"
             placeholder="Event schedule (DD/MM/YYYY)"
+            name="date"
             required
           />
-          <input type="text" placeholder="Event Organizer" required />
+          <input
+            type="text"
+            placeholder="Event Organizer"
+            name="organizer"
+            required
+          />
 
           <div class="radio-section">
             <label>Online/Offline</label><br />
@@ -41,19 +58,20 @@
             <label for="offline">Offline</label>
           </div>
 
-          <input type="number" placeholder="Participant Quota" required />
+          <input type="number" placeholder="Participant Quota" name="quota" />
 
           <div class="price-section">
             <label for="price">Price</label>
-            <input type="text" id="price" placeholder="Rp." />
-            <input type="checkbox" id="free" />
+            <input type="text" id="price" placeholder="Rp." name="price" />
+            <input type="checkbox" id="free" name="free" />
             <label for="free">Free</label>
           </div>
 
-          <input type="text" placeholder="Duration" />
+          <input type="text" placeholder="Duration" name="duration" />
           <input
             type="text"
             placeholder="Event venue (Place/Link Of Online Meeting)"
+            name="place"
             required
           />
 

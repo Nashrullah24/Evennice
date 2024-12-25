@@ -123,13 +123,15 @@ h2 {
 
 .banner {
   background: url("banner-bg.jpg") no-repeat center center/cover;
-  color: white;
+  background-size: contain;
+  color: var(--primary);
   text-align: center;
   padding: 2rem; /* Menggunakan rem agar responsif */
   position: relative;
   max-width: 90vw; /* Tidak melebihi 90% dari lebar layar */
   margin: 0 auto;
   border-radius: 10px;
+  height: 500px;
 }
 
 .banner-poster {

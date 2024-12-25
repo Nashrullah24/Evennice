@@ -41,18 +41,18 @@ if (isset($_GET['id'])) {
 <body class="body">
     <main>
         <section class="banner">
-            <img src="picture/<?php echo $row['poster']; ?>" alt="<?php echo $row['name']; ?> Poster" class="banner-poster">
+            <img src="uploads/<?php echo $row['poster']; ?>" alt="<?php echo $row['name']; ?> Poster" class="banner-poster">
         </section>
 
         <section class="event-details">
             <h2><?php echo $row['name']; ?></h2>
-            <p><strong><?php echo $row['purpose']; ?></strong></p>
+            <p><?php echo $row['description']; ?></p>
         </section>
 
         <section class="organizer">
             <h3>Organized By:</h3>
             <div class="organizer-details">
-                <p><strong><?php echo $row['organizer']; ?></strong></p>
+                <p><?php echo $row['organizer']; ?></p>
             </div>
         </section>
 
@@ -61,6 +61,16 @@ if (isset($_GET['id'])) {
             <p><?php echo $row['date']; ?></p>
             <h3>Location:</h3>
             <p><?php echo $row['place']; ?></p>
+        </section>
+       
+        <section class="schedule">
+            <h3>Event Type</h3>
+            <p><?php echo $row['event_type']; ?></p>
+        </section>
+        
+        <section class="schedule">
+            <h3>Registration link</h3>
+            <p><?php echo $row['link']; ?></p>
         </section>
 
         </main>
